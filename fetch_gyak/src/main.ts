@@ -13,9 +13,12 @@ async function load() {
   console.log(content.products[0].title);
 }
 
-function outputData(inputArray: allProducts){
+function outputData(inputArray: allProducts[]){
   //inputArray.products[0].brand
-  let output = document.getElementById("outputDiv")!;
+  const listItem = document.createElement("ul");
+  document.getElementById("outputDiv")!.appendChild(listItem);
+  inputArray.forEach(item => {
+  });
 }
 
 function allData(){}
